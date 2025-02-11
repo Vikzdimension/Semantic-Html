@@ -1,0 +1,126 @@
+table, th, td {
+    border: 2px solid rgb(53, 31, 199);
+    padding: 10px;
+    margin: auto;
+    margin-block: 20px;
+    color: #333;
+    background: #f9f9f9;
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: left;
+}
+
+tr:hover {
+    background-color: #e0e0e0;
+}
+
+th {
+    padding: 12px;
+    background-color: lightblue;
+    color: white;
+}
+
+hr {
+    border: 3px solid black;
+    margin-bottom: 25px;
+}
+
+address{
+    /* font-style: normal; */
+    /* font-size: 20px; */
+    margin: auto;
+}
+
+body {
+    background: linear-gradient(to right, rgba(203, 180, 174, 0.7), rgba(254, 180, 123, 0.7)), 
+                url('../img/bg-pizza.jpg') no-repeat center center fixed; /* Adjust the path to your image */
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    /* margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: auto;
+    text-align: center;
+}
+html {
+    height: auto;
+    width: auto;
+    scroll-behavior: smooth;
+}
+
+nav {
+    text-align: center;
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+form {
+    margin: auto;
+    width: 50%;
+    padding: 20px; /* Increased padding for better spacing */
+    border: 2px solid rgb(174, 163, 243);
+    background: #f9f9f9; /* Existing background color */
+    background-color: rgba(241, 219, 194, 0.625); /* New background color matching pizza theme */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+}
+
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    form {
+        width: 80%;
+    }    
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 20px;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    form {
+        width: 100%;
+    }
+}
